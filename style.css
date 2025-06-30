@@ -1,0 +1,114 @@
+:root {
+  --primary: #1e40af; /* Blue */
+  --secondary: #dc2626; /* Red */
+  --nav-bg-color: hsl(210, 29%, 24%); /* Darker background for navigation */
+  --hero-bg-color: rgba(239, 90, 26, 0.7); /* Semi-transparent blue for hero overlay */
+  --pipe-bg-color: rgba(0, 0, 0, 0.6); /* Dark overlay for pipe section */
+  --sugar-bg-color: rgba(0, 0, 0, 0.6); /* Dark overlay for sugar section */
+  --contact-bg-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contact section */
+  --gallery-bg-image: url('images/gallery-bg.jpeg'); /* Background image for gallery section */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: var(--nav-bg-color); /* Use the new navigation background color */
+}
+
+nav a {
+  color: rgb(215, 81, 81); /* Change link color */
+}
+
+nav a:hover {
+  color: var(--secondary); /* Change link color on hover */
+}
+
+.hero-bg {
+  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url('images/home-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipe-bg {
+  background-image: linear-gradient(var(--pipe-bg-color), var(--pipe-bg-color)), url('images/pipe-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sugar-bg {
+  background-image: linear-gradient(var(--sugar-bg-color), var(--sugar-bg-color)), url('images/sugar-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-bg {
+  background-image: linear-gradient(var(--contact-bg-color), var(--contact-bg-color)), url('images/contact-bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-bg {
+  background-image: linear-gradient(var(--gallery-bg-image), var(--gallery-bg-image)), url('images/gallery-bg.jpeg');
+  background-image: var(--gallery-bg-image); /* Use the gallery background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 400px; /* Set a minimum height for the gallery section */
+}
+
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.active-page {
+  border-bottom: 3px solid var(--secondary);
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+}
+
+.bg-blue-700 {
+  background-color: var(--primary);
+}
+
+.bg-blue-800 {
+  background-color: #1e3a8a; /* Darker blue */
+}
+
+.bg-green-500 {
+  background-color: #48BB78; /* Green */
+}
+
+.bg-green-600 {
+  background-color: #38A169; /* Darker green */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-bg {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile Menu Styles */
+#mobile-menu {
+  display: none; /* Initially hidden */
+}
+
+#mobile-menu-button.active + #mobile-menu {
+  display: block; /* Show mobile menu when button is active */
+}
