@@ -11,48 +11,51 @@
 <body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="bg-gray-800 shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#home" class="text-xl font-bold text-white">Sridhar Raghavan</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-white hover:text-blue-400 px-3 py-2 active-page">Home</a>
-                    <div class="group relative">
-                        <button class="text-white hover:text-blue-400 px-3 py-2 focus:outline-none">
-                            Business <i class="fas fa-chevron-down ml-1"></i>
-                        </button>
-                        <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-1 py-1 w-48">
-                            <a href="#pipe-fittings" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Pipe Fittings</a>
-                            <a href="#sugar-industry" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Sugar Industry</a>
-                        </div>
-                    </div>
-                    <a href="#gallery" class="text-white hover:text-blue-400 px-3 py-2">Gallery</a>
-                    <a href="#contact" class="text-white hover:text-blue-400 px-3 py-2">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-white hover:text-blue-400 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <a href="#home" class="text-xl font-bold text-white">Sridhar Raghavan</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-blue-400 px-3 py-2 active-page">Home</a>
+                <div class="group relative">
+                    <button class="text-white hover:text-blue-400 px-3 py-2 focus:outline-none">
+                        Business <i class="fas fa-chevron-down ml-1"></i>
                     </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu (hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100 active-page">Home</a>
-                <div>
-                    <button id="business-toggle" class="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Business <i class="fas fa-chevron-down ml-1"></i></button>
-                    <div id="business-menu" class="hidden pl-4">
-                        <a href="#pipe-fittings" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-blue-50">Pipe Fittings</a>
-                        <a href="#sugar-industry" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-blue-50">Sugar Industry</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-1 py-1 w-48">
+                        <a href="#pipe-fittings" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Pipe Fittings</a>
+                        <a href="#sugar-industry" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Sugar Industry</a>
+                        <a href="#real-estate" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Real Estate</a> <!-- Added Real Estate link -->
                     </div>
                 </div>
-                <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Gallery</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Contact</a>
+                <a href="#gallery" class="text-white hover:text-blue-400 px-3 py-2">Gallery</a>
+                <a href="#contact" class="text-white hover:text-blue-400 px-3 py-2">Contact</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-white hover:text-blue-400 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100 active-page">Home</a>
+            <div>
+                <button id="business-toggle" class="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Business <i class="fas fa-chevron-down ml-1"></i></button>
+                <div id="business-menu" class="hidden pl-4">
+                    <a href="#pipe-fittings" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-blue-50">Pipe Fittings</a>
+                    <a href="#sugar-industry" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-blue-50">Sugar Industry</a>
+                    <a href="#real-estate" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-blue-50">Real Estate</a> <!-- Added Real Estate link -->
+                </div>
+            </div>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Gallery</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-100">Contact</a>
+        </div>
+    </div>
+</nav>
+
 
     <!-- Hero Section (Home Page) -->
     <section id="home" class="hero-bg text-white min-h-screen flex items-center justify-center">
