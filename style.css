@@ -1,8 +1,8 @@
 :root {
   --primary: #1e40af; /* Blue */
-  --secondary: #dc2626; /* Red */
+  --secondary: #dc9326; /* Red */
   --nav-bg-color: hsl(210, 29%, 24%); /* Darker background for navigation */
-  --hero-bg-color: rgba(239, 90, 26, 0.7); /* Semi-transparent blue for hero overlay */
+  --hero-bg-color: rgba(0,0,0,0.6); /* Semi-transparent blue for hero overlay */
   --pipe-bg-color: rgba(0, 0, 0, 0.6); /* Dark overlay for pipe section */
   --sugar-bg-color: rgba(0, 0, 0, 0.6); /* Dark overlay for sugar section */
   --contact-bg-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contact section */
@@ -24,7 +24,7 @@ nav a:hover {
 
 
 .hero-bg {
-  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url('images/home-bg.jpeg');
+  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url('images/home-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 .contact-bg {
-  background-image: linear-gradient(var(--contact-bg-color), var(--contact-bg-color)), url('images/contact-bg.webp');
+  background-image: linear-gradient(var(--contact-bg-color), var(--contact-bg-color)), url('images/contact-bg.jpg');
   background-size: cover;
   background-position: center;
 }
