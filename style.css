@@ -14,17 +14,14 @@ body {
   scroll-behavior: smooth;
 }
 
-nav {
-  background-color: var(--nav-bg-color); /* Use the new navigation background color */
-}
-
 nav a {
-  color: rgb(215, 81, 81); /* Change link color */
+  color: white; /* Set default link color to white */
 }
 
 nav a:hover {
   color: var(--secondary); /* Change link color on hover */
 }
+
 
 .hero-bg {
   background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)), url('images/home-bg.jpeg');
@@ -77,7 +74,9 @@ nav a:hover {
 }
 
 .active-page {
-  border-bottom: 3px solid var(--secondary);
+  /* Remove the border-bottom */
+  /* border-bottom: 3px solid var(--secondary); */
+  font-weight: bold; /* Optional: Make the active link bold */
 }
 
 /* Button Styles */
