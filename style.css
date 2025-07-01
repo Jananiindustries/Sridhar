@@ -48,6 +48,11 @@ nav a:hover {
   background-size: cover;
   background-position: center;
 }
+.real-estate-bg {
+    background-image: linear-gradient(var(--contact-bg-color), var(--contact-bg-color)), url('images/real-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 .contact-bg {
   background-image: linear-gradient(var(--contact-bg-color), var(--contact-bg-color)), url('images/contact-bg.webp');
@@ -104,11 +109,35 @@ button {
   }
 }
 
-/* Mobile Menu Styles */
 #mobile-menu {
-  display: none; /* Initially hidden */
+    display: none; /* Initially hidden */
+    position: absolute; /* Position it absolutely */
+    top: 100%; /* Position it below the navigation */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    background-color: white; /* Set background color to white */
+    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
 }
 
-#mobile-menu-button.active + #mobile-menu {
-  display: block; /* Show mobile menu when button is active */
+
+#mobile-menu.show {
+    display: block; /* Show mobile menu when the class is added */
+}
+#mobile-menu-button {
+    background-color: transparent; /* Ensure the button has a transparent background */
+    border: none; /* Remove any border */
+    color: white; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#mobile-menu-button:focus {
+    outline: none; /* Remove focus outline */
+}
+#mobile-menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a subtle hover effect */
+}
+
+#mobile-menu-button.active {
+    background-color: transparent; /* Ensure no background when active */
 }
